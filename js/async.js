@@ -41,9 +41,24 @@
  * Это сообщение нужно показать юзеру только один раз
  */
 
-// const toastRef = document.querySelector('.toast');
+// const toastRef = document.querySelector(".toast");
 // const bsToast = new bootstrap.Toast(toastRef, { autohide: false });
 
+// const timeoutId = setTimeout(() => {
+//   bsToast.show();
+
+//   setTimeout(() => {
+//     bsToast.hide();
+//   }, 2000);
+// }, 2000);
+
+// setTimeout(() => {
+//   clearTimeout(timeoutId);
+// }, 1000);
+
+// const showMessage = (string) => console.log(string);
+
+// setTimeout(showMessage, 1000, "Hello");
 ///////////////////////////////////////////////////////////
 //
 //

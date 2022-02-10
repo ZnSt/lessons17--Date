@@ -65,6 +65,15 @@
 
 // Выведите в консоль количество часов, прошедшее между 8 февраля и текущим моментом
 
+// const currData = new Date();
+// const pastData = new Date("2022/02/08");
+
+// currDate.sethours =
+//   (currData.getHours(), currData.getMinutes(), currData.getSeconds(), currData.getMilliseconds());
+// console.log("pastData", pastData);
+
+// const hoursDiff = Math.round((currData - pastData) / 1000 / 60 / 60 / 24);
+// console.log("hoursDiff", hoursDiff);
 //
 //
 //
@@ -96,7 +105,37 @@
  */
 
 // const btnRef = document.querySelector('[data-action="count-days"]');
-// const resultRef = document.querySelector('.days-left');
-// const inputRef = document.querySelector('.date');
+// const resultRef = document.querySelector(".days-left");
+// const inputRef = document.querySelector(".date");
 
-// inputRef.value = '1995-11-18';
+// inputRef.value = "2000-02-13";
+
+// const onClick = () => {
+//   if (!Date.parse(inputRef.value)) {
+//     alert("Wrong format! Try again");
+//     return;
+//   }
+//   const currentDate = new Date();
+//     const userDate = new Date(inputRef.value);
+//     const currentYear = currentDate.getFullYear();
+
+//     currentDate.setHours(0, 0, 0, 0);
+//       userDate.setHours(0, 0, 0, 0);
+
+//     if (userDate.getTime() === currentDate.getTime()) {
+//         resultRef.innerHTML = `<b>Happy Birthday</b>`;
+//         return;
+
+//   }
+
+//     if (userDate < currentDate) {
+//         userDate.setFullYear(currentYear + 1);
+
+//     }
+
+//     const diff = (userDate - currentDate) / 1000 / 60 / 60 / 24;
+//     resultRef.textContent = `${diff}`
+
+// };
+
+// btnRef.addEventListener("click", onClick);
